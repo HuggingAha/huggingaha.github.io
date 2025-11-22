@@ -1,27 +1,29 @@
-disabled = false
+# disabled = false
 languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 1
 title = "Blowfish"
 
 [params]
-  displayName = "中文"
+  displayName = "简体中文"
   isoCode = "zh-cn"
   rtl = false
-  dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  dateFormat = "2006-01-02"
+  # logo = "img/blowfish_logo_transparent.png"
+  description = "个人博客网站"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
-  name = "baize.^^"
+  name = "时影"
   email = "huggingaha@gmail.com"
-#   image = "img/blowfish_logo.png"
-#   imageQuality = 96
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
+  image = "img/blowfish_logo.png"
+  imageQuality = 96
+  headline = "知行无辍"
+  # bio = ""
+  links = [
+    { email = "huggingaha@gmail.com" },
+    { github = "https://github.com/huggingaha" }
+  ]
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -35,7 +37,6 @@ title = "Blowfish"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/username" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
@@ -73,4 +74,4 @@ title = "Blowfish"
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
-#   ]
+
