@@ -29,9 +29,9 @@ defaultBackgroundImage = "img/background.svg" # used as default for background i
 # hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
 
-# highlightCurrentMenuArea = true
-# smartTOC = true
-# smartTOCHideUnfocusedChildren = true
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
 
 fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
@@ -51,8 +51,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "img/cover.png" # used in: hero, and card
-  showRecent = true
-  showRecentItems = 3
+  # showRecent = true
+  showRecentItems = 9
   showMoreLink = true
   showMoreLinkDest = "/blogs/"
   cardView = true
@@ -62,35 +62,35 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [article]
   showDate = true
-  # showViews = false
-  # showLikes = false
-  # showDateOnlyInArticle = false
+  showViews = false
+  showLikes = false
+  showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
   # showAuthorBottom = false
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  # layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
-  seriesOpened = false
+  seriesOpened = true
   showHeadingAnchors = true
   showPagination = true
-  # invertPagination = false
+  invertPagination = false
   showReadingTime = true
   showTableOfContents = true
   # showRelatedContent = true
-  relatedContentLimit = 3
-  showTaxonomies = false # use showTaxonomies OR showCategoryOnly, not both
+  relatedContentLimit = 6
+  showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
   showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
   showAuthorsBadges = false
   showWordCount = true
   showSummary = true
-  sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
+  # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   # showZenMode = false
 
 [list]
@@ -98,10 +98,10 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   heroStyle = "background" # valid options: basic, big, background
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
-  showSummary = true
+  showSummary = false
   showTableOfContents = false
   showCards = true
-  groupByYear = true
+  groupByYear = false
   cardView = true
   cardViewScreenWidth = false
 
@@ -110,17 +110,23 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [taxonomy]
   showTermCount = true
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
 
 [term]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = false
   cardViewScreenWidth = false
+  cardView = false
 
 [firebase]
   # apiKey = "XXXXXX"

@@ -39,8 +39,9 @@ googleAnalytics = "G-97B2MTMSQ7"
   home = ["HTML", "RSS", "JSON"]
 
 [related]
-  threshold = 0
-  toLower = false
+  threshold = 50
+  includeNewer = true
+  toLower = true
 
     [[related.indices]]
         name = "tags"
@@ -56,7 +57,7 @@ googleAnalytics = "G-97B2MTMSQ7"
 
     [[related.indices]]
         name = "authors"
-        weight = 20
+        weight = 10
 
     [[related.indices]]
         name = "date"
