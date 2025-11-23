@@ -49,7 +49,7 @@ partition = la.find_partition(G, la.ModularityVertexPartition)
 ig.plot(partition)
 ```
 
-![image.png](./../img/leidenalg/image.png)
+![image.png](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/image.png)
 
 在这种情况下，算法实际上会找到最佳分区，可以使用`igraph`包中的`community_optimal_modularity()`来检查,会得到不同的结果。
 
@@ -61,7 +61,7 @@ ig.plot(partition)
 
 ```
 
-![image.png](./../img/leidenalg/image%201.png)
+![image.png](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/image%201.png)
 
 传递给`find_partition`的额外参数`**kwargs`都会传递给给定`partition_type`。可以传递`resolution_parameter`、`weights` 、`node_sizes`等参数。
 
@@ -190,7 +190,7 @@ profile = optimiser.resolution_profile(G, la.CPMVertexPartition,
 
 绘制分辨率参数与子社区总边数的关系图，结果如下：
 
-![image.png](./../img/leidenalg/image%202.png)
+![image.png](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/image%202.png)
 
 现在，配置文件包含一个指定类型的分区列表（例子中为`CPMVertexPartition`），用于解析参数发生变化。特别是，`profile[i]`应该更好直到`profile[i+1]`，或者有另外的说明，对于`profile[i].resolution_parameter`和 `profile[i+1].resolution_parameter`之间的分区的分辨率参数`i`更好。当然，会有一些变化，因为`optimise_partition()`会找到不同质量的分区，不同的运行，变化点也可能会有所不同。
 
