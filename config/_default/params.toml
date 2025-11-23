@@ -101,7 +101,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showSummary = false
   showTableOfContents = false
   showCards = true
-  groupByYear = false
+  groupByYear = true
   cardView = true
   cardViewScreenWidth = false
 
@@ -124,7 +124,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showViews = false
   showLikes = false
   showTableOfContents = true
-  groupByYear = false
+  groupByYear = true
   cardViewScreenWidth = false
   cardView = false
 
