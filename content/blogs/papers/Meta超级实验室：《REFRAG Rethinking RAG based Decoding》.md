@@ -7,7 +7,6 @@ slug: "REFRAG-Rethinking-RAG-based-Decoding"
 tags: ["论文", "RAG", "Meta"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

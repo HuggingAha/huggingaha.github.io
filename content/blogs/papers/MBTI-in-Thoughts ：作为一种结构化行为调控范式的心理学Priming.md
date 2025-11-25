@@ -7,7 +7,6 @@ slug: "MBTI-in-Thoughts-Psychologically-Enhanced-AI-Agents"
 tags: ["论文", "LLM", "Agent", "Prompt Engineering", "Psychology", "Game Theory"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

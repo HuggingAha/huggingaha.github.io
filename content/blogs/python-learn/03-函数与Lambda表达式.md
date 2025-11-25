@@ -7,7 +7,6 @@ slug: "python-function-Lambda"
 tags: ["Python", "基础"]
 series: ["Python"]
 series_order: 3
-weight: 3
 draft: false
 ---
 

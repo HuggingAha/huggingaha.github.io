@@ -7,7 +7,6 @@ slug: "SSN_GATNE-T-VS-GATNE-T"
 tags: ["论文", "KG", "表示学习"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

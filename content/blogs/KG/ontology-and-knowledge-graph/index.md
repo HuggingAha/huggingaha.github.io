@@ -7,7 +7,6 @@ description: "译文-解释本体与知识图谱的概念"
 tags: ["本体", "KG"]
 #series: [""]
 #series_order: 9
-#weight: 1
 draft: false
 ---
 

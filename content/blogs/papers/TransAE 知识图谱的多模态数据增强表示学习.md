@@ -7,7 +7,6 @@ slug: "TransAE-Multimodal-Data-Enhanced-Representation-Learning"
 tags: ["论文", "KG", "多模态", "表示学习"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

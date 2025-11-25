@@ -7,7 +7,6 @@ slug: "kimi-k2-technical-report"
 tags: ["论文", "LLM", "Moonshot", "kimi-k2"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

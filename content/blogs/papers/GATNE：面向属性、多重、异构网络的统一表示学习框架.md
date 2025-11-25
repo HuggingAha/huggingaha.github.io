@@ -7,7 +7,6 @@ slug: "GATNE-Representation-Learning-for-Attributed-Multiplex-Heterogeneous-Netw
 tags: ["论文", "KG", "表示学习", "AMHEN"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

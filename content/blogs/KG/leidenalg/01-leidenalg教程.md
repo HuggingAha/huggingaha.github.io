@@ -7,7 +7,6 @@ slug: "01"
 tags: ["教程", "KG", "leidenalg"]
 series: ["leidenalg"]
 series_order: 1
-1weight: 1
 draft: false
 ---
 

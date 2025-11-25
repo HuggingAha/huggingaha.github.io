@@ -7,7 +7,6 @@ slug: "GSPO-RL-LLM"
 tags: ["论文", "LLM", "RL", "GSPO", "Qwen"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

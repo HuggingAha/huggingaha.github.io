@@ -7,7 +7,6 @@ slug: "markdown-grammar"
 tags: ["杂记", "markdown"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

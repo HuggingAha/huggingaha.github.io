@@ -7,7 +7,6 @@ slug: "linux-operation"
 tags: ["杂记", "linux 指令"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 

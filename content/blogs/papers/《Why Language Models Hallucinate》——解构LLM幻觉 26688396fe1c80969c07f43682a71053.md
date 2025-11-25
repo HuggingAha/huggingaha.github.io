@@ -7,7 +7,6 @@ slug: "LLM-Hallucinate"
 tags: ["论文", "LLM", "幻觉", "OpenAI"]
 # series: [""]
 # series_order: 1
-# weight: 4
 draft: false
 ---
 
