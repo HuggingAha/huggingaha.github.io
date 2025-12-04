@@ -4,7 +4,7 @@ showAuthor: false
 date: 2025-09-30
 description: "深度解析MBTI-in-Thoughts框架：如何利用心理学理论作为先验，实现对SOTA大模型行为的可验证、可量化的方向性调控。"
 slug: "MBTI-in-Thoughts-Psychologically-Enhanced-AI-Agents"
-tags: ["论文", "LLM", "Agent", "Prompt Engineering", "Psychology", "Game Theory"]
+tags: ["论文", "LLM", "Agent", "PromptEngineering", "Psychology", "GameTheory"]
 # series: [""]
 # series_order: 1
 draft: false
@@ -33,7 +33,7 @@ MiT框架的核心贡献之一，是将定性的心理学描述转化为定量�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/overview_8.png" alt="MBTI-in-Thoughts 框架概览，展示理论层与应用层的映射关系">
-  <figcaption>Figure1 MBTI-in-Thoughts 框架概览，展示理论层与应用层的映射关系</figcaption>
+  <figcaption style="text-align: center;">Figure1 MBTI-in-Thoughts 框架概览，展示理论层与应用层的映射关系</figcaption>
 </figure>
 
 
@@ -77,7 +77,7 @@ MiT框架引入了**客观验证机制**，拒绝“盲目信任”Prompt的效�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/0tohsP.png" alt="各人格类型在四个维度上的评分分布箱线图，展示注入的鲁棒性">
-  <figcaption>Figure2 各人格类型在四个维度上的评分分布箱线图，展示注入的鲁棒性</figcaption>
+  <figcaption style="text-align: center;">Figure2 各人格类型在四个维度上的评分分布箱线图，展示注入的鲁棒性</figcaption>
 </figure>
 
 ---
@@ -95,7 +95,7 @@ MiT框架引入了**客观验证机制**，拒绝“盲目信任”Prompt的效�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/Sx9PbC.png" alt="MBTI人格维度对LLM写作风格与质量特征的差异化影响评估">
-  <figcaption>Figure3 MBTI人格维度对LLM写作风格与质量特征的差异化影响评估</figcaption>
+  <figcaption style="text-align: center;">Figure3 MBTI人格维度对LLM写作风格与质量特征的差异化影响评估</figcaption>
 </figure>
 
 
@@ -114,7 +114,7 @@ MiT框架引入了**客观验证机制**，拒绝“盲目信任”Prompt的效�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/B8Efu2.png" alt="博弈论任务中的背叛率、策略转换率和诚实率统计">
-  <figcaption>Figure4 博弈论任务中的背叛率、策略转换率和诚实率统计</figcaption>
+  <figcaption style="text-align: center;">Figure4 博弈论任务中的背叛率、策略转换率和诚实率统计</figcaption>
 </figure>
 
 
@@ -132,7 +132,7 @@ MiT框架引入了**客观验证机制**，拒绝“盲目信任”Prompt的效�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/bench_accuracy.png" alt="Analysis of inter-agent communication protocols.">
-  <figcaption>Figure6 Analysis of inter-agent communication protocols.</figcaption>
+  <figcaption style="text-align: center;">Figure6 Analysis of inter-agent communication protocols.</figcaption>
 </figure>
 
 **反直觉的结论**:

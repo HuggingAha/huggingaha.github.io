@@ -32,7 +32,7 @@ draft: false
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/oNOYWd.png" alt="图像数据中的显式结构化知识（左）与隐式语义关联（右）">
-  <figcaption>Figure1 图像数据中的显式结构化知识（左）与隐式语义关联（右）</figcaption>
+  <figcaption style="text-align: center;">Figure1 图像数据中的显式结构化知识（左）与隐式语义关联（右）</figcaption>
 </figure>
 
 ### 1.3 论文目标
@@ -47,7 +47,7 @@ TransAE 的核心思想是利用自动编码器的中间隐藏层作为实体的
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/M1hDEA.png" alt="TransAE 整体架构示意图">
-  <figcaption>Figure2 TransAE 整体架构示意图</figcaption>
+  <figcaption style="text-align: center;">Figure2 TransAE 整体架构示意图</figcaption>
 </figure>
 
 > *注：模型输入图像和文本特征，通过自动编码器学习实体表示，同时结合 TransE 的损失函数进行联合训练。*
@@ -149,7 +149,7 @@ $$ L = L_a + \beta L_e' + \alpha \Omega(\theta) \tag{13} $$
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/tjLLsF.png" alt="不同多模态自动编码器损失权重下的模型训练收敛曲线对比">
-  <figcaption>Figure3 不同多模态自动编码器损失权重下的模型训练收敛曲线对比</figcaption>
+  <figcaption style="text-align: center;">Figure3 不同多模态自动编码器损失权重下的模型训练收敛曲线对比</figcaption>
 </figure>
 
 结果显示，随着自动编码器损失权重的增加（即更重视多模态信息），模型的收敛速度变快，且最终性能更好。这证实了引入外部知识有助于提升学习效率和质量。

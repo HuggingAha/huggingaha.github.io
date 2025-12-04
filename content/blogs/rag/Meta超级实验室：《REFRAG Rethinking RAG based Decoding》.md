@@ -39,7 +39,7 @@ REFRAG 的核心思想是：**用预先计算好的、压缩后的“块嵌入�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/cvrI9N.png" alt="REFRAG主要设计">
-  <figcaption>Figure1 REFRAG主要设计</figcaption>
+  <figcaption style="text-align: center;">Figure1 REFRAG主要设计</figcaption>
 </figure>
 
 
@@ -67,7 +67,7 @@ REFRAG 的核心思想是：**用预先计算好的、压缩后的“块嵌入�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/jiyLZN.png" alt="训练期间课程学习中的数据混合">
-  <figcaption>Figure6 训练期间课程学习中的数据混合</figcaption>
+  <figcaption style="text-align: center;">Figure6 训练期间课程学习中的数据混合</figcaption>
 </figure>
 
 
@@ -92,7 +92,7 @@ REFRAG 的一个重要创新是并非所有上下文都同等重要。某些关�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/a0ZWgr.png" alt="REFRAG在𝑘=16时的推理加速经验验证。">
-  <figcaption>Figure2 REFRAG在𝑘=16时的推理加速经验验证。</figcaption>
+  <figcaption style="text-align: center;">Figure2 REFRAG在𝑘=16时的推理加速经验验证。</figcaption>
 </figure>
 
 - **TTFT 加速**：在 16384 个 Token 的中长上下文场景下，当压缩率 `k=16` 时，REFRAG (Cached) 实现了 **16.53 倍**的 TTFT 加速，是当时 SOTA 模型 CEPE (2.01x) 的 8 倍以上。当压缩率 `k=32` 时，TTFT 加速更是达到了 **30.85 倍**。
@@ -115,14 +115,14 @@ REFRAG 的一个重要创新是并非所有上下文都同等重要。某些关�
     
     <figure>
         <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/zXPoOt.png" alt="强检索器场景（左）与弱检索器场景（右）下的 RAG 性能对比">
-        <figcaption>Figure4 强检索器场景（左）与弱检索器场景（右）下的 RAG 性能对比</figcaption>
+        <figcaption style="text-align: center;">Figure4 强检索器场景（左）与弱检索器场景（右）下的 RAG 性能对比</figcaption>
     </figure>
     
 2. **多轮对话**：在多轮对话任务中，传统模型因上下文窗口限制（如 LLaMA 的 4k）不得不截断历史对话，导致信息丢失。而 REFRAG 凭借其压缩能力，可以在有限的计算预算内保留更完整的对话历史，从而在多个数据集上显著优于基线模型（「表 4」）。
 
     <figure>
         <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/6EtkQl.png" alt="在多轮RAG任务上的表现，对于#段落=5和#段落=10的情况。">
-        <figcaption>Table4 在多轮RAG任务上的表现，对于#段落=5和#段落=10的情况。</figcaption>
+        <figcaption style="text-align: center;">Table4 在多轮RAG任务上的表现，对于#段落=5和#段落=10的情况。</figcaption>
     </figure>
     
 

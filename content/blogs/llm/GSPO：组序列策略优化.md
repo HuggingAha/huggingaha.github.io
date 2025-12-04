@@ -127,7 +127,7 @@ PPO在实践中的核心挑战在于其严重依赖价值模型。具体来说�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/Wle12g.png" alt="从Qwen3-30B-A3B-Base微调的冷启动模型的训练曲线。GSPO比GRPO具有显著更高的训练效率">
-  <figcaption>Figure1 从Qwen3-30B-A3B-Base微调的冷启动模型的训练曲线。GSPO比GRPO具有显著更高的训练效率</figcaption>
+  <figcaption style="text-align: center;">Figure1 从Qwen3-30B-A3B-Base微调的冷启动模型的训练曲线。GSPO比GRPO具有显著更高的训练效率</figcaption>
 </figure>
 
 图1显示GSPO的训练始终稳定进行。我们观察到GSPO可以通过增加训练计算、定期更新查询集和扩展生成长度来提供持续的性能改进。此外，GSPO还表现出优于GRPO的训练效率，在相同的训练计算和消耗查询下实现更好的训练准确性和基准性能。最后，我们已成功将GSPO应用于最新Qwen3模型的强化学习训练，有力证明了GSPO在释放大语言模型强化学习扩展能力方面的有效性。
@@ -138,7 +138,7 @@ GSPO与GRPO相比的一个关键区别是它裁剪整个响应而不是单个tok
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/KRh6gL.png" alt="GSPO和GRPO强化学习训练期间裁剪token的平均分数">
-  <figcaption>Figure2 GSPO和GRPO强化学习训练期间裁剪token的平均分数</figcaption>
+  <figcaption style="text-align: center;">Figure2 GSPO和GRPO强化学习训练期间裁剪token的平均分数</figcaption>
 </figure>
 
 
@@ -151,7 +151,7 @@ GSPO与GRPO相比的一个关键区别是它裁剪整个响应而不是单个tok
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/q8t27z.png" alt="路由重放策略在MoE模型GRPO训练正常收敛中起关键作用">
-  <figcaption>Figure3 路由重放策略在MoE模型GRPO训练正常收敛中起关键作用</figcaption>
+  <figcaption style="text-align: center;">Figure3 路由重放策略在MoE模型GRPO训练正常收敛中起关键作用</figcaption>
 </figure>
 
 

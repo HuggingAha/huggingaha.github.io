@@ -37,7 +37,7 @@ RAHMeN的整个流程可以看作一个分层、迭代的过程。在模型的�
 
 <figure>
   <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/11/HQVvPH.png" alt="RAHMeN步骤概述">
-  <figcaption>Figure3 RAHMeN步骤概述</figcaption>
+  <figcaption style="text-align: center;">Figure3 RAHMeN步骤概述</figcaption>
 </figure>
 
 
