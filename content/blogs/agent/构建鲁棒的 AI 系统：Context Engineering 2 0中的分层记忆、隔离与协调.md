@@ -14,7 +14,7 @@ draft: false
 {{< katex >}}
 
 
-# 构建鲁棒的 AI 系统：Context Engineering 2.0中的分层记忆、隔离与协调
+<!-- 构建鲁棒的 AI 系统：Context Engineering 2.0中的分层记忆、隔离与协调 -->
 
 > [Context Engineering 2.0: The Context of Context Engineering](https://arxiv.org/abs/2510.26493)  
 > [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot)

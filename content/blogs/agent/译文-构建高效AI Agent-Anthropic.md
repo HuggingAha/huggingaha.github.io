@@ -14,7 +14,7 @@ draft: false
 {{< katex >}}
 
 
-# 译文-构建高效AI Agent-Anthropic
+<!-- # 译文-构建高效AI Agent-Anthropic -->
 
 {{< alert "claude" >}}
 [engineering/building-effective-agents](https://www.anthropic.com/engineering/building-effective-agents)

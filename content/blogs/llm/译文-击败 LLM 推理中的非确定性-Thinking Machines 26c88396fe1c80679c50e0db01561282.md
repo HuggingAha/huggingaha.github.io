@@ -13,7 +13,7 @@ draft: false
 <!-- 渲染公式 -->
 {{< katex >}}
 
-# 译文-击败 LLM 推理中的非确定性-Thinking Machines
+<!-- # 译文-击败 LLM 推理中的非确定性-Thinking Machines -->
 
 date: 2025年9月14日
 slug: defeating-nondeterminism-in-llm-inference-translate

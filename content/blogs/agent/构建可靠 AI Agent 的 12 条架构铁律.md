@@ -14,7 +14,7 @@ draft: false
 {{< katex >}}
 
 
-# 告别玩具，拥抱生产：构建可靠 AI Agent 的 12 条架构铁律
+<!-- # 告别玩具，拥抱生产：构建可靠 AI Agent 的 12 条架构铁律 -->
 
 > 参考：[humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents.git)
 

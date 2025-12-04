@@ -14,10 +14,11 @@ draft: false
 {{< katex >}}
 
 
-# **“思考”工具：让 Claude 在复杂的工具使用场景中停下来思考**
+<!-- # **“思考”工具：让 Claude 在复杂的工具使用场景中停下来思考** -->
 
-> 原文：[engineering/claude-think-tool](https://www.anthropic.com/engineering/claude-think-tool)
-> 
+{{< alert "claude" >}}
+[engineering/claude-think-tool](https://www.anthropic.com/engineering/claude-think-tool)
+{{< /alert >}}
 
 {{< alert "bell" >}}
 **一种能提升 Claude 解决复杂问题能力的新工具**
