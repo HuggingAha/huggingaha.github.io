@@ -5,8 +5,8 @@ date: 2025-12-06
 description: "普林斯顿与斯坦福团队提出了一种无需训练的框架，通过共享“潜在工作记忆”和“潜在思维”，让智能体间通信的带宽提升数个数量级，推理速度提升 4.3 倍。"
 slug: "latent-collaboration-in-multi-agent-systems"
 tags: ["论文", "Multi-Agent", "LatentSpace"]
-# series: [""]
-# series_order: 1
+series: ["LatentMAS"]
+series_order: 1
 draft: false
 ---
 
