@@ -4,7 +4,7 @@ showAuthor: false
 date: 2025-10-01
 description: "LoRA-Without-Regret-ThinkingMachines"
 slug: "LoRA-Without-Regret-ThinkingMachines"
-tags: ["翻译", "LLM", "微调", "LoRA"]
+tags: ["翻译", "LLM", "微调", "LoRA", "ThinkingMachines"]
 # series: [""]
 # series_order: 1
 draft: false
