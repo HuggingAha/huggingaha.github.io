@@ -65,13 +65,13 @@ graph TD
         Ingestion --> Temporal[时序冲突检测]
         Ingestion --> Dedupe[实体消歧与去重]
         
-        Retrieval --> HybridSearch[混合搜索 (BM25 + Vector + BFS)]
-        Retrieval --> Reranker[重排序 (RRF / CrossEncoder)]
+        Retrieval --> HybridSearch["混合搜索 (BM25 + Vector + BFS)"]
+        Retrieval --> Reranker["重排序 (RRF / CrossEncoder)"]
     end
     
     subgraph Infrastructure [基础设施]
-        LLM[LLM Client (OpenAI/Anthropic)]
-        DB[(Graph DB: Neo4j / FalkorDB)]
+        LLM["LLM Client (OpenAI/Anthropic)"]
+        DB["(Graph DB: Neo4j / FalkorDB)"]
     end
     
     Ingestion --> LLM
