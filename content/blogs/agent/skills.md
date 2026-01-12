@@ -21,10 +21,12 @@ draft: false
 {{< /alert >}}
 
 
-<!-- <figure>
-  <img src="https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2025/12/TOa2vy.png" alt="图1: Agent Skills 的元工具执行流程图">
-  <figcaption style="text-align: center;">图1: Agent Skills 的元工具执行流程图</figcaption>
-</figure> -->
+<!-- 
+<figure>
+  <img src="" alt="">
+  <figcaption style="text-align: center;"></figcaption>
+</figure> 
+-->
 
 <!-- # Agent Skills Specification：智能体能力的标准化架构与工程实践 -->
 
