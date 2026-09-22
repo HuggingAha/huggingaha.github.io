@@ -1,0 +1,24 @@
+{{/* 
+  Blowfish v3 回归修复：katex-render.js 未能进入 main.bundle。
+  原因：v3 把 katex-render.js 的追加包进 {{ if .Page.HasShortcode "katex" }}，
+  但 resources.Concat "js/main.bundle.js" 在页面间按路径复用缓存，
+  首个（通常非公式）页面构建出的 bundle 被全站共用，渲染逻辑永远不打包。
+  此扩展在具备 katex 短标记的页面直接注入等价的渲染胶水（复制自主题 katex-render.js 语义）。
+  kaTeX 库本身由主题 vendor.html 按 HasShortcode 正常加载。
+*/}}
+{{ if .Page.HasShortcode "katex" }}
+<script>
+  (function () {
+    var s = document.getElementById("katex-render"); /* katex.bundle 的 script 标签 */
+    function go() {
+      if (window.renderMathInElement) { renderMathInElement(document.body); }
+    }
+    if (s) {
+      s.addEventListener("load", go);
+      /* 兜底：脚本已加载完成而 load 事件已触发时（缓存/异常顺序） */
+      if (s.readyState === "complete") { go(); }
+    }
+    window.addEventListener("load", function () { setTimeout(go, 250); });
+  })();
+</script>
+{{ end }}

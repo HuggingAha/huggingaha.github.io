@@ -2,8 +2,8 @@
 
 > 使用 Hugo 和 Blowfish 主题构建的个人博客网站，部署在 GitHub Pages 上。
 
-[![Hugo](https://img.shields.io/badge/Hugo-0.143.1-blue?logo=hugo)](https://gohugo.io/)
-[![Blowfish](https://img.shields.io/badge/Theme-Blowfish-blue)](https://blowfish.page/)
+[![Hugo](https://img.shields.io/badge/Hugo-0.165.0-blue?logo=hugo)](https://gohugo.io/)
+[![Blowfish](https://img.shields.io/badge/Theme-Blowfish_v3-blue)](https://blowfish.page/)
 [![Deploy Status](https://github.com/用户名/用户名.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/用户名/用户名.github.io/actions/workflows/hugo.yml)
 [![GitHub License](https://img.shields.io/github/license/用户名/用户名.github.io)](LICENSE)
 

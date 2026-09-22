@@ -1,0 +1,5 @@
+/* 圆形 Logo：logo.png 已做圆形透明通道，这里仅作兜底裁剪 */
+img.logo {
+  border-radius: 9999px;
+  object-fit: cover;
+}

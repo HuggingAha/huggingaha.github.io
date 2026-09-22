@@ -30,7 +30,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3  # 升级：v2→v3
         with:
-          hugo-version: '0.151.2'  # 锁定版本，避免 latest 不兼容
+          hugo-version: '0.165.0'  # 锁定版本，须在 Blowfish v3 支持的滚动窗口内（当前 0.162.0–0.165.0）
           extended: true  # 关键：支持 SCSS/SASS，Blowfish 主题必需
 
       - name: Build with Hugo

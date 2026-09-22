@@ -15,7 +15,7 @@ enableCodeCopy = true
 
 # replyByEmail = false
 
-mainSections = ["blogs"]
+mainSections = ["posts"]
 # robots = ""
 
 # disableImageOptimization = false
@@ -54,7 +54,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showRecent = true
   showRecentItems = 9
   showMoreLink = true
-  showMoreLinkDest = "/blogs/"
+  showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
@@ -116,6 +116,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showViews = false
   showLikes = false
   showTableOfContents = true
+  cardView = true
 
 [term]
   showHero = true
@@ -172,3 +173,18 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [advertisement]
   # adsense = ""
+
+# -- Comments (giscus, GitHub Discussions 驱动) --
+# 启用步骤：1) 仓库开启 Discussions；2) 安装 giscus app；
+# 3) 到 https://giscus.app/zh-CN 生成 repoID / categoryID 填入下方并取消注释。
+# [giscus]
+#   enable = true
+#   repo = "HuggingAha/huggingaha.github.io"
+#   repoID = ""
+#   category = "General"
+#   categoryID = ""
+#   mapping = "pathname"          # 文章与 Discussion 的映射方式
+#   reactionsEnabled = true
+#   inputPosition = "bottom"
+#   themeDark = "dark"
+#   themeLight = "light"
