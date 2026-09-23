@@ -1,7 +1,7 @@
 ---
 title: "Python 变量、运算符与数据类型"
 date: 2022-04-29
-description: "介绍Python变量、运算符与数据类型"
+description: "整理 Python 入门基础：变量赋值规则，算术、比较、位运算符与 is/== 的区别，数值与字符串类型，以及条件、循环、推导式的流程控制写法。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]

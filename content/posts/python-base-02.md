@@ -1,7 +1,7 @@
 ---
 title: "Python 容器序列类型"
 date: 2022-04-30
-description: "介绍Python的容器序列类型"
+description: "梳理 Python 五大容器类型的用法：列表、元组、字符串、字典与集合的创建和增删改查，切片与浅拷贝、深拷贝的区别，以及 sorted、enumerate 等通用序列函数。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]

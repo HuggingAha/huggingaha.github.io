@@ -1,7 +1,7 @@
 ---
 title: "Python I/O 指南"
 date: 2022-11-07
-description: "介绍Python I/O功能"
+description: "覆盖 Python 输入输出的核心场景：F-strings 与 format 格式化、str 和 repr 的区别、open 的文件读写模式、with 上下文管理，以及 JSON 与 Pickle 序列化持久化。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]

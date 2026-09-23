@@ -1,7 +1,7 @@
 ---
 title: "Python 错误与异常"
 date: 2022-11-08
-description: "讲解Python 错误与异常的处理"
+description: "讲清 Python 异常机制的完整链路：语法错误与异常的区别、try/except/else/finally 的执行时机、raise 主动抛出与异常链，以及如何设计自定义异常。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]

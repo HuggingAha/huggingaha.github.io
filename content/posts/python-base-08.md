@@ -1,7 +1,7 @@
 ---
 title: "Python 类"
 date: 2022-11-12
-description: "讲解Python中的类"
+description: "从类的定义与 self 本质讲起，覆盖类属性与实例属性、三种方法装饰器、继承与 MRO 解析顺序，再到 property、dataclass 和 __slots__ 的对象模型优化。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]

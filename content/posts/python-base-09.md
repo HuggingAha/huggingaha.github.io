@@ -1,7 +1,7 @@
 ---
 title: "Python 标准库"
 date: 2022-11-14
-description: "讲解Python中的部分标准库使用"
+description: "按场景挑选常用标准库：os/pathlib 文件操作、re 正则、json/csv/sqlite3 数据持久化、math/datetime 数值与时间，以及 urllib 和 logging 等工具。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]
