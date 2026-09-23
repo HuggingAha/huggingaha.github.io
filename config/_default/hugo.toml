@@ -34,6 +34,11 @@ hasCJKLanguage = true
   series = "series"
   topic = "topics"
 
+# 文章 URL 与物理目录脱钩：content/posts/ 下可按子目录分类管理，URL 恒为 /posts/<文件名>/
+# 注意必须用 :filename（:slug 会退化为标题，中文标题会产生中文路径）
+[permalinks]
+  posts = "/posts/:filename/"
+
 [sitemap]
   changefreq = 'daily'
   filename = 'sitemap.xml'
