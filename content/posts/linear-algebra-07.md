@@ -89,6 +89,49 @@ aliases: ["/blogs/math/linear-algebra/07/"]
 2. 对 \(\boldsymbol{A}\) 进行高斯消元，得到行阶梯形矩阵 (REF)。
 3. **REF 中主元 (pivot) 所在的列**，其对应的**原始向量**就构成了 \(U\) 的一组基。
 
+光看步骤容易无感，下面用一个具体例子把消元过程完整算一遍。原书的 Example 2.17 在 \(\mathbb{R}^5\) 上演算，这里换一个 \(\mathbb{R}^3\) 的例子，每一步都可以手算跟一遍。
+
+**具体例子** ：设
+
+$$
+\boldsymbol{x}_1 = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}, \quad
+\boldsymbol{x}_2 = \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}, \quad
+\boldsymbol{x}_3 = \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}, \quad
+U = \text{span}[\boldsymbol{x}_1, \boldsymbol{x}_2, \boldsymbol{x}_3] \subseteq \mathbb{R}^3
+$$
+
+这组向量里其实埋了一个冗余（\(\boldsymbol{x}_3 = 2\boldsymbol{x}_1 + \boldsymbol{x}_2\)），但下面假装不知道，只用消元把它揪出来。
+
+1. **构矩阵** ，把三个向量按列拼起来：
+
+    $$
+    \boldsymbol{A} = [\boldsymbol{x}_1, \boldsymbol{x}_2, \boldsymbol{x}_3] = \begin{bmatrix} 1 & 2 & 4 \\ 2 & 1 & 5 \\ 3 & 0 & 6 \end{bmatrix}
+    $$
+
+2. **消元** ，把主元下方的元素逐个清零（箭头上标注了用的是哪一行减哪一行）：
+
+    $$
+    \begin{bmatrix} 1 & 2 & 4 \\ 2 & 1 & 5 \\ 3 & 0 & 6 \end{bmatrix}
+    \xrightarrow{R_2 \leftarrow R_2 - 2R_1,\; R_3 \leftarrow R_3 - 3R_1}
+    \begin{bmatrix} 1 & 2 & 4 \\ 0 & -3 & -3 \\ 0 & -6 & -6 \end{bmatrix}
+    \xrightarrow{R_3 \leftarrow R_3 - 2R_2}
+    \begin{bmatrix} 1 & 2 & 4 \\ 0 & -3 & -3 \\ 0 & 0 & 0 \end{bmatrix}
+    $$
+
+    最后一行全零，说明第三个向量没有提供新方向：对应的未知量是自由变量。
+
+3. **找主元列** ：REF 的主元在第 1 列和第 2 列，因此**原始向量** \(\boldsymbol{x}_1, \boldsymbol{x}_2\) 就是 \(U\) 的一组基，\(\dim(U) = 2\)。注意取的是**原始的** \(\boldsymbol{x}_1, \boldsymbol{x}_2\)，不是 REF 里的列 \((1, 0, 0)^\top\) 和 \((2, -3, 0)^\top\)——行变换会改变列空间本身，但列之间的线性相关结构被保留了下来，这正是这个方法成立的原因。
+
+4. **顺手验证** ：如果继续消元到行最简形 (RREF)：
+
+    $$
+    \begin{bmatrix} 1 & 2 & 4 \\ 0 & -3 & -3 \\ 0 & 0 & 0 \end{bmatrix}
+    \xrightarrow{\text{主元行归一化，再回代消零}}
+    \begin{bmatrix} 1 & 0 & 2 \\ 0 & 1 & 1 \\ 0 & 0 & 0 \end{bmatrix}
+    $$
+
+    RREF 的第 3 列是 \((2, 1, 0)^\top\)，恰好读出了冗余关系 \(\boldsymbol{x}_3 = 2\boldsymbol{x}_1 + 1\boldsymbol{x}_2\)——和出发前埋的答案一致。这个例子还顺带演示了下一个数值示例 (Example 2.18) 的算法：REF 里有 2 个主元，所以 \(\text{rk}(\boldsymbol{A}) = 2\)。
+
 **秩 (Rank)** (Definition in Section 2.6.2)
 
 秩是矩阵的一个核心属性，它将矩阵的行、列和线性变换联系在一起。
