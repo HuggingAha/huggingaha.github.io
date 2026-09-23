@@ -1,7 +1,7 @@
 ---
-title: "Python 模块：从代码组织到大型应用架构"
+title: "Python 模块与包：代码组织之道"
 date: 2022-11-05
-description: "介绍Python模块是如何组织代码与应用架构。"
+description: "介绍 Python 模块与包的机制：import 方式、__name__ 模式、搜索路径、__init__.py 与相对导入。"
 categories: ["notes"]
 topics: ["engineering"]
 tags: ["python"]

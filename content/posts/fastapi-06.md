@@ -53,7 +53,6 @@ weather-mcp/
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    WEATHER_API_KEY: str
     MCP_AUTH_TOKEN: str = "secret-token-123" # 默认值仅用于开发
     ENV: str = "production"
 
@@ -61,6 +60,8 @@ class Settings(BaseSettings):
 
 settings = Settings()
 ```
+
+> 上游天气服务选用 [wttr.in](https://wttr.in)——无需注册、无需 API key，直接 `GET https://wttr.in/{city}?format=j1` 返回 JSON，适合跑通链路。如果换成商业天气服务（如 OpenWeather），再在 `Settings` 里加 `WEATHER_API_KEY` 字段即可。
 
 ---
 
@@ -137,16 +138,16 @@ async def get_weather(
     query: WeatherQuery,
     client: Annotated[httpx.AsyncClient, Depends(get_http_client)]
 ):
-    # 模拟外部 API 调用
-    # 真实场景应调用 https://api.weatherprovider.com...
-    # response = await client.get(f"...", params={"q": query.city, "appid": settings.WEATHER_API_KEY})
-    # data = response.json()
-    
-    return {
-        "temperature": 25.5,
-        "description": "Sunny",
-        "humidity": 60
-    }
+    # 真实调用 wttr.in（免 key），format=j1 返回结构化 JSON
+    response = await client.get(f"https://wttr.in/{query.city}?format=j1")
+    if response.status_code != 200:
+        raise HTTPException(status_code=502, detail="Upstream weather service error")
+    current = response.json()["current_condition"][0]
+    return WeatherData(
+        temperature=float(current["temp_C"]),
+        description=current["weatherDesc"][0]["value"].strip(),
+        humidity=int(current["humidity"]),
+    )
 
 # 4. 挂载 MCP 服务
 # auth_config 将保护 /mcp 端点
@@ -168,31 +169,34 @@ mcp.mount() # 默认挂载在 /mcp
 ```dockerfile
 # Dockerfile
 # Stage 1: Builder
-FROM python:3.11-slim as builder
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
 COPY requirements.txt .
-# 安装依赖到用户目录，避免污染系统环境
-RUN pip install --user --no-cache-dir -r requirements.txt
+# 装进独立 venv，路径与运行阶段一致，便于直接复制
+RUN python -m venv /opt/venv && \
+    /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Runner
 FROM python:3.11-slim
 
 WORKDIR /app
-# 从 builder 阶段复制安装好的包
-COPY --from=builder /root/.local /root/.local
+# 从 builder 阶段复制整个 venv
+COPY --from=builder /opt/venv /opt/venv
 COPY ./app ./app
 
-# 更新 PATH 环境变量
-ENV PATH=/root/.local/bin:$PATH
+# 使用 venv 里的可执行文件
+ENV PATH=/opt/venv/bin:$PATH
 
-# 创建非 root 用户
+# 创建非 root 用户并切换（venv 在 /opt 下，appuser 可读可执行）
 RUN useradd -m appuser
 USER appuser
 
 # 生产级启动命令：使用 gunicorn 管理 uvicorn workers
 CMD ["gunicorn", "app.main:app", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:8000"]
 ```
+
+> 原稿用 `pip install --user` 装进 `/root/.local` 再切到 `appuser`——`/root` 目录其他用户不可读，容器一启动就会报 `gunicorn: command not found`。装进 `/opt/venv` 是常见的修法。
 
 **运行命令**：
 ```bash
@@ -202,7 +206,6 @@ docker build -t weather-mcp:v1 .
 # 运行容器 (注入环境变量)
 docker run -d \
   -p 8000:8000 \
-  -e WEATHER_API_KEY="your_api_key" \
   -e MCP_AUTH_TOKEN="your_secure_token" \
   weather-mcp:v1
 ```

@@ -196,4 +196,29 @@ print(f"Three days ago was: {three_days_ago.date()}")
 
 ### `pdb`：Python 调试器
 
-`pdb` 模块为 Python 程序提供了一个交互式的源代码调试器。可以在代码的任何位置设置断点 (`import pdb; pdb.set_trace()`)，然后进入一个交互式环境，检查变量、单步执行代码。
+`pdb` 模块为 Python 程序提供了一个交互式的源代码调试器。在代码的任何位置设置断点，即可进入交互式环境检查变量、单步执行。
+
+Python 3.7+ 推荐使用内置的 `breakpoint()` 函数，无需手动 import：
+
+```python
+def divide(a, b):
+    breakpoint()  # 程序运行到这里会暂停，进入 pdb 交互界面
+    return a / b
+
+divide(10, 2)
+```
+
+进入 `(Pdb)` 提示符后的常用命令：
+
+| 命令 | 作用 |
+|---|---|
+| `n` (next) | 单步执行，不进入函数内部 |
+| `s` (step) | 单步执行，进入函数内部 |
+| `c` (continue) | 继续执行到下一个断点 |
+| `p 变量名` | 打印变量的值 |
+| `l` (list) | 查看当前位置前后的源码 |
+| `q` (quit) | 退出调试 |
+
+## 小结
+
+标准库覆盖了日常开发的绝大多数基础需求。我的使用习惯是：**文件路径一律用 `pathlib`，数据交换先想 `json`，日期时间交给 `datetime`，输出诊断信息用 `logging` 而不是 `print`**。遇到新需求时先翻一遍[标准库文档](https://docs.python.org/zh-cn/3.11/library/index.html)的目录，往往比自己造轮子或引入第三方依赖更省事。
