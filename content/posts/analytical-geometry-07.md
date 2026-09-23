@@ -19,7 +19,7 @@ aliases: ["/blogs/math/analytical-geometry/07/"]
 
 除了投影，**旋转 (Rotation)** 是另一类基础且重要的线性变换。作为一种正交变换，旋转的核心特性是**保持向量的长度和向量间的角度**，即保持空间的刚性结构，仅改变对象的朝向。这使得它在计算机图形学、机器人控制和数据增强等领域扮演着关键角色。
 
-![*图3.14 旋转变换的图示*](%E6%97%8B%E8%BD%AC%20(Rotations)/image.png)
+![*图3.14 旋转变换的图示*](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/ag07-rotation-transform.png)
 
 *图3.14 旋转变换的图示*
 
@@ -33,7 +33,7 @@ aliases: ["/blogs/math/analytical-geometry/07/"]
 
 我们可以通过观察标准基向量 \(\mathbf{e}_1=[1, 0]^\top\) 和 \(\mathbf{e}_2=[0, 1]^\top\) 经过旋转后的新位置来确定旋转矩阵 \(\mathbf{R}(\theta)\)。
 
-![*图3.16 二维标准基的旋转*](%E6%97%8B%E8%BD%AC%20(Rotations)/image%201.png)
+![*图3.16 二维标准基的旋转*](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/ag07-rotation-2d-basis.png)
 
 *图3.16 二维标准基的旋转*
 

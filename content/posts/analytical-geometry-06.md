@@ -52,7 +52,7 @@ $$
 1. **位置条件:** 投影点必须在直线上，因此它必然是 \(\mathbf{b}\) 的一个标量倍，即 \(\pi_U(\mathbf{x}) = \lambda\mathbf{b}\)，其中 \(\lambda\) 是我们要找的坐标。
 2. **正交条件:** 连接向量 \(\mathbf{x}\) 与其投影点 \(\pi_U(\mathbf{x})\) 的向量（即误差向量 \(\mathbf{x} - \pi_U(\mathbf{x})\)）必须与直线本身（即与基向量 \(\mathbf{b}\)）正交。
 
-![*图3.10 向量到一维子空间的投影*](%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1%20(Orthogonal%20Projections)/image.png)
+![*图3.10 向量到一维子空间的投影*](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/ag06-projection-1d-subspace.png)
 
 *图3.10 向量到一维子空间的投影*
 

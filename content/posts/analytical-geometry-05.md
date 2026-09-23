@@ -78,7 +78,7 @@ aliases: ["/blogs/math/analytical-geometry/05/"]
     
 4. **最后一步（归一化）：** 将得到的所有正交向量 \(\mathbf{u}_k\) 都除以它们各自的长度，即可得到一组标准正交基。
 
-![*图3.12 格拉姆-施密特过程的几何图示*](%E6%A0%87%E5%87%86%E6%AD%A3%E4%BA%A4%E5%9F%BA%E4%B8%8E%E6%A0%BC%E6%8B%89%E5%A7%86-%E6%96%BD%E5%AF%86%E7%89%B9%E6%AD%A3%E4%BA%A4%E5%8C%96/image.png)
+![*图3.12 格拉姆-施密特过程的几何图示*](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/ag05-gram-schmidt.png)
 
 *图3.12 格拉姆-施密特过程的几何图示*
 

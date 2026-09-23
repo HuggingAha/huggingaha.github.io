@@ -59,7 +59,7 @@ $$\|\mathbf{y}\| = \sqrt{1^2+2^2} = \sqrt{5}$$
 $$\cos\omega = \frac{3}{\sqrt{2} \cdot \sqrt{5}} = \frac{3}{\sqrt{10}}$$
 因此，夹角 \(\omega = \arccos\left(\frac{3}{\sqrt{10}}\right) \approx 0.32 \text{ rad} \approx 18^\circ\)。
 
-![*图3.5 两个向量间的夹角*](%E8%A7%92%E5%BA%A6%E4%B8%8E%E6%AD%A3%E4%BA%A4%E6%80%A7%20(Angles%20and%20Orthogonality)/image.png)
+![*图3.5 两个向量间的夹角*](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/ag04-angle-between-vectors.png)
 
 *图3.5 两个向量间的夹角*
 
@@ -95,7 +95,7 @@ $$\mathbf{x} \perp \mathbf{y} \iff \langle \mathbf{x}, \mathbf{y} \rangle = 0$$
 $$\langle \mathbf{x}, \mathbf{y} \rangle = [1, 1] \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} -1 \\ 1 \end{bmatrix} = [1, 1] \begin{bmatrix} -2 \\ 1 \end{bmatrix} = -2 + 1 = -1 \ne 0$$
 在这个内积空间中，\(\mathbf{x}\) 和 \(\mathbf{y}\) **不正交**。我们可以计算出它们的夹角约为 \(109.5^\circ\)。
 
-![*图3.6 向量间的角度依赖于内积*](%E8%A7%92%E5%BA%A6%E4%B8%8E%E6%AD%A3%E4%BA%A4%E6%80%A7%20(Angles%20and%20Orthogonality)/image%201.png)
+![*图3.6 向量间的角度依赖于内积*](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/ag04-angle-depends-inner-product.png)
 
 *图3.6 向量间的角度依赖于内积*
 
