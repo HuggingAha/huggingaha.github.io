@@ -34,12 +34,12 @@ aliases: ["/blogs/agent/context-engineering-for-ai-agents-lessons-from-building-
 
 ### 原文提炼
 
-1. “KV-cache hit rate is the single most important metric.”
-2. “Mask, don’t remove.”
-3. “File system = unlimited, persistent, operable memory.”
-4. “Recitation biases attention without architectural changes.”
-5. “Erasing failure removes evidence.”
-6. “Don’t few-shot yourself into a rut.”
+1. 「KV-Cache 命中率是最重要的单一指标。」
+2. 「掩码（Mask），不要移除。」
+3. 「文件系统 = 无限、持久、可操作的内存。」
+4. 「复述（Recitation）无需改变架构即可偏置注意力。」
+5. 「抹除失败记录就是抹除证据。」
+6. 「不要让自己被 Few-shot 困在思维定式里。」
 
 
 {{< alert "bell" >}}
@@ -50,7 +50,9 @@ aliases: ["/blogs/agent/context-engineering-for-ai-agents-lessons-from-building-
 
 ## 详细分析
 
-> [Context Engineering for AI Agents: Lessons from Building Manus](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
+{{< alert "claude" >}}
+[阅读原文：Context Engineering for AI Agents: Lessons from Building Manus（Manus）](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
+{{< /alert >}}
 
 这篇文章分享了 Manus 团队在构建 AI Agent 过程中的核心经验，他们将其总结为“上下文工程”（Context Engineering）。其核心论点是，在当前技术阶段，与其投入巨大成本对模型进行端到端的训练，不如基于前沿大模型的上下文学习能力（in-context learning）进行构建，这能带来更快的迭代速度和产品灵活性。 Manus 将其探索过程戏称为“随机研究生下降”（Stochastic Graduate Descent），即一个通过架构搜索、提示词调整和经验猜测等手动过程不断寻找局部最优解的实践科学。
 

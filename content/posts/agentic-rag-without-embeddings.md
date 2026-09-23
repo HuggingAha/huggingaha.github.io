@@ -91,21 +91,21 @@ def load_document(url: str) -> str:
     # ... (pdf reading and text extraction) ...
     return full_text
 # Load the document (e.g., a legal manual with 900k+ tokens)
-document_text = load_document("https://www.uspto.gov/sites/default/files/docume
+document_text = load_document("https://www.uspto.gov/sites/default/files/documents/tbmp-Master-June2024.pdf")
 ```
 
 **初始分割 (Initial Split)**
 
 ```python
 # ... (tokenizer import) ...
-def split_into_20_chunks(text: str, min_tokens: int = 500) -> List[Dict[str, An
+def split_into_20_chunks(text: str, min_tokens: int = 500) -> List[Dict[str, Any]]:
     """Split text into up to 20 chunks, respecting sentence boundaries."""
     sentences = sent_tokenize(text)
     tokenizer = tiktoken.get_encoding(TOKENIZER_NAME)
     # ... (logic to build chunks from sentences and handle chunk size) ...
     return chunks
 document_chunks = split_into_20_chunks(document_text, min_tokens=500)
-# This results in ~20 chunks, each potentially holding tens of thousands of tok
+# This results in ~20 chunks, each potentially holding tens of thousands of tokens
 ```
 
 **路由与导航（核心智能体） (Routing & Navigation (The Core Agent))**
@@ -125,7 +125,7 @@ def route_chunks(question: str, chunks: List[Dict[str, Any]],
     # ... (model call with tools and tool_choice="required") ...
     # ... (process tool call, update scratchpad) ...
     # Step 2: Ask model to select relevant chunk IDs (structured output)
-    text_format = { "format": { "type": "json_schema", "name": "selected_chunks
+    text_format = { "format": { "type": "json_schema", "name": "selected_chunks", "strict": True, "schema": { "type": "object", "properties": { "chunk_ids": { "type": "array", "items": { "type": "integer" } } }, "required": ["chunk_ids"], "additionalProperties": False } } }
     
     # ... (model call with text_format) ...
     # ... (extract selected_ids from JSON response) ...
@@ -157,7 +157,7 @@ def generate_answer(question: str, paragraphs: List[Dict[str, Any]],
         model="gpt-4.1",
         input=[
             {"role": "system", "content": system_prompt.format(...)},
-            {"role": "user", "content": f"QUESTION: {question}\n\nSCRATCHPAD: {
+            {"role": "user", "content": f"QUESTION: {question}\n\nSCRATCHPAD: {scratchpad}\n\nPARAGRAPHS:\n{context}"}
         ],
         text_format=LegalAnswer,
         temperature=0.3
@@ -176,7 +176,7 @@ class VerificationResult(BaseModel):
     confidence: Literal["high", "medium", "low"]
 
 def verify_answer(question: str, answer: LegalAnswer,
-                  cited_paragraphs: List[Dict[str, Any]]) -> VerificationResult
+                  cited_paragraphs: List[Dict[str, Any]]) -> VerificationResult:
     """Verify if the answer is grounded in the cited paragraphs."""
     # ... (prepare context string from cited paragraphs with IDs) ...
     system_prompt = """You are a fact-checker for legal information.
@@ -189,7 +189,7 @@ def verify_answer(question: str, answer: LegalAnswer,
         model="o4-mini",
         input=[
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"QUESTION: {question}\n\nANSWER TO VER
+            {"role": "user", "content": f"QUESTION: {question}\n\nANSWER TO VERIFY: {answer.answer}\n\nCITATIONS USED: {', '.join(answer.citations)}\n\nSOURCE PARAGRAPHS:\n{context}"}
         ],
         text_format=VerificationResult
     )
