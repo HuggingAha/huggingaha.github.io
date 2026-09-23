@@ -12,6 +12,10 @@ node_modules
 # Hugo
 public
 
+# 草稿（draft- 前缀，发布时去前缀并单独提交，见 AGENTS.md §五）
+content/posts/*/draft-*.md
+content/posts/*/draft-*/
+
 blog-notion
 resources
 temp/*
