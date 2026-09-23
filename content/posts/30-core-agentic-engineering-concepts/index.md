@@ -7,7 +7,7 @@ topics: ["agent"]
 tags: ["agent"]
 showAuthor: false
 aliases: ["/blogs/agent/30-core-agentic-engineering-concepts/"]
-featuredImage: "./1GbRct1qcyZBLBX1XCdTl-Q.png"
+featuredImage: "https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-01.png"
 ---
 
 {{< alert "claude" >}}
@@ -15,7 +15,7 @@ featuredImage: "./1GbRct1qcyZBLBX1XCdTl-Q.png"
 作者：Deep concept
 {{< /alert >}}
 
-![智能体工程分层示意图](./1GbRct1qcyZBLBX1XCdTl-Q.png)
+![智能体工程分层示意图](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-01.png)
 
 ---
 
@@ -37,7 +37,7 @@ featuredImage: "./1GbRct1qcyZBLBX1XCdTl-Q.png"
 
 这就是本文的目标。读完之后，你将用简单的语言理解 30 个核心智能体工程概念。所以下次当你读到一篇关于智能体的文章、观看一个 demo，或者看到另一个 AI 新闻时，你能够识别出背后的真正思想，而不是再次感到落后。
 
-![困惑的猫](./12V7GUVVhlwEkFRu8QCvOwA.png)
+![困惑的猫](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-02.png)
 
 ---
 
@@ -84,7 +84,7 @@ AI 智能体通常是一个不会只回答一次就停下来的 LLM。它运行�
 
 目标不是在所有地方都使用智能体。目标是在它们的灵活性真正值得成本的地方使用它们。
 
-![LLM 调用 vs 工具调用 vs 智能体循环](./12fnpdYXS1z6M0fOVQTGNug.png)
+![LLM 调用 vs 工具调用 vs 智能体循环](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-03.png)
 
 ---
 
@@ -122,7 +122,7 @@ AI 智能体通常是一个不会只回答一次就停下来的 LLM。它运行�
 
 所以在初学者阶段，只要记住这一点：智能体通过重复一个循环来工作。它思考下一步。它通过使用工具来行动。它观察结果。然后重复，直到任务完成。**这个循环是智能体工程的核心。**
 
-![执行模型](./1ATMtoCGOL7ZbBVTMdqcvMA.png)
+![执行模型](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-04.png)
 
 ---
 
@@ -185,7 +185,7 @@ AI 智能体通常是一个不会只回答一次就停下来的 LLM。它运行�
 
 而良好的智能体设计主要是关于决定什么应该留在外面、什么应该被带进来，以及什么时候带进来。
 
-![智能体状态](./1jam6jklmXoX3JDuVtVcF4Q.png)
+![智能体状态](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-05.png)
 
 ---
 
@@ -250,11 +250,11 @@ AI 智能体通常是一个不会只回答一次就停下来的 LLM。它运行�
 
 无论使用哪种模式，都要让智能体之间的交接清晰。这就是让整个系统保持可理解的关键。
 
-![规划者/执行者模式](./1taaKIGODWzj_vz6uhzVNEw.png)
+![规划者/执行者模式](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-06.png)
 
-![路由器/专家模式](./1keq_QQBrRldegl8YGidAuQ.png)
+![路由器/专家模式](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-07.png)
 
-![Map-Reduce 模式](./1-cb5SqmOS5mgGIWf6jp03g.png)
+![Map-Reduce 模式](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-08.png)
 
 ---
 
@@ -303,7 +303,7 @@ Claude Code 使用一个名为 `CLAUDE.md` 的文件。许多其他工具使用 
 
 一个好的配置文件不是用来给智能体留下深刻印象的。它是用来减少猜测的。这就是真正的价值。你的智能体需要猜测的越少，它工作得越好。
 
-![智能体配置文件示例](./1EwPiPxlsFCMsWLzeBXMjrw.png)
+![智能体配置文件示例](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-09.png)
 
 ---
 
@@ -367,7 +367,7 @@ Claude Code 使用一个名为 `CLAUDE.md` 的文件。许多其他工具使用 
 
 每一层都有自己的工作。配置给智能体项目规则。工作流给智能体可重复的流程。Prompt 给智能体当前任务。当这三者协同工作时，智能体需要猜测的东西就更少了。而更少的猜测通常意味着更好的输出。
 
-![SkillsBench：便宜模型 + 好技能击败旗舰模型](./19fuUGXuFhlC4Zh0XP-Y2dw.png)
+![SkillsBench：便宜模型 + 好技能击败旗舰模型](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-10.png)
 
 ---
 
@@ -414,7 +414,7 @@ Claude Code 使用一个名为 `CLAUDE.md` 的文件。许多其他工具使用 
 
 你仍然需要审查输出。你仍然需要理解改变了什么。你仍然需要对最终代码负责。但有了好的工作流框架，智能体有更好的轨道可以遵循。而当轨道更好时，结果通常也更好。
 
-![工作流框架](./17yDGuTtFIjXabFaYzK7xJw.png)
+![工作流框架](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-11.png)
 
 ---
 
@@ -456,7 +456,7 @@ Prompt 缓存是一个听起来很技术化，但基本思想很简单的概念�
 
 简单的思考方式是：Prompt 缓存让重复指令更便宜。它帮助智能体重用稳定上下文，而不是每一轮都支付全部成本。但它不能修复糟糕的上下文。所以仍然要保持配置文件干净。仍然要保持工作流文件有用。仍然要删除通用噪音。缓存让好的上下文更便宜。它不能让弱的上下文变得更好。
 
-![Prompt 缓存](./1e6fTz0SzXOK3FqFOqQ8mhQ.png)
+![Prompt 缓存](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-12.png)
 
 ---
 
@@ -478,7 +478,7 @@ Prompt 缓存是一个听起来很技术化，但基本思想很简单的概念�
 
 这结束了配置层。现在让我们看看智能体开始工作后，实际上可以够到什么。
 
-![上下文腐烂](./1zV9ZVDeiLzWNIm0bYy5vVA.png)
+![上下文腐烂](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-13.png)
 
 ---
 
@@ -516,7 +516,7 @@ MCP 源自 Anthropic，但这个思想现在正在 AI 工具生态系统中传�
 
 **MCP 并不总是最轻量的选项。但当智能体需要安全、标准化地访问许多外部系统时，它可能是更干净的选择。**
 
-![MCP Token 开销](./1rUf-A8CWHGTwyc-gD8xw1Q.png)
+![MCP Token 开销](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-14.png)
 
 ---
 
@@ -566,7 +566,7 @@ AI 原生搜索就是为此设计的。它不会让智能体挖掘混乱的 HTML
 
 **人类搜索给出页面。AI 原生搜索给出可用的上下文。对于智能体来说，可用的上下文才是真正重要的。**
 
-![AI 原生网页搜索](./1qETL9PPwk-MeSRPKYFDlzQ.png)
+![AI 原生网页搜索](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-15.png)
 
 ---
 
@@ -632,7 +632,7 @@ AI 原生搜索就是为此设计的。它不会让智能体挖掘混乱的 HTML
 
 **记忆帮助智能体记住过去的会话。知识搜索帮助它找到会话之外的有用信息。它们共同给智能体更好的上下文，而不需要把所有东西强行塞进 prompt。**
 
-![长期记忆与知识搜索](./1M-yhM1gvTRwNc3vtdz2P9A.png)
+![长期记忆与知识搜索](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-16.png)
 
 ---
 
@@ -673,7 +673,7 @@ Git worktrees 在这里有帮助。一个 worktree 给每个智能体自己的�
 
 **当任务可以拆分成聚焦的片段时使用子智能体。让每个子智能体保持狭窄。让父智能体收集最终结果。**
 
-![子智能体保持主线程干净](./18FtfjDOpGjS3Zy3jpm0Kpg.png)
+![子智能体保持主线程干净](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-17.png)
 
 ---
 
@@ -726,7 +726,7 @@ Cline Kanban 跨 Claude Code、Codex 和 Cline 等智能体工作。它添加了
 
 但这个思想很重要。一旦许多智能体一起工作，你就需要一个系统来管理任务、隔离工作、跟踪进度并安全地合并结果。
 
-![编排看板](./1wFbhVbNcKB6no9OrTXVaeA.png)
+![编排看板](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-18.png)
 
 ---
 
@@ -762,7 +762,7 @@ Cline Kanban 跨 Claude Code、Codex 和 Cline 等智能体工作。它添加了
 
 许多智能体可以快速移动。但如果没有任何东西控制它们，它们也可能造成严重损害。这就是下一层的作用。
 
-![本地智能体 vs 托管智能体](./1gxQHpL3w8qZGw3OaQvKVHw.png)
+![本地智能体 vs 托管智能体](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-19.png)
 
 ---
 
@@ -798,7 +798,7 @@ Cline Kanban 跨 Claude Code、Codex 和 Cline 等智能体工作。它添加了
 
 **默认使用沙盒。当任务不受信任、高容量或有风险时，使用更强的隔离。**
 
-![沙盒区域](./1U0VwFDSv9TYpukn10-JeuA.png)
+![沙盒区域](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-20.png)
 
 ---
 
@@ -866,7 +866,7 @@ Hooks 不能替代沙盒。沙盒限制损害，如果坏事运行了。Hooks �
 
 **当你的智能体可以访问强大工具，特别是 Bash 时，使用 hooks。它们保护"模型决定做这个"和"系统实际做了这个"之间的间隙。**
 
-![Pre-tool hook](./1T8R3UWJAiQP7TpePqkPFpg.png)
+![Pre-tool hook](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-21.png)
 
 ---
 
@@ -917,7 +917,7 @@ Prompt 注入防御围绕一个思想：
 
 **Prompt 注入防御在智能体成为攻击路径时保护你。** 当智能体读取不受信任的仓库、外部文档、工具输出或第三方配置文件时，这一点尤其重要。
 
-![同形异义字符攻击](./167oULuvGKm1cXNi8zyYxlA.png)
+![同形异义字符攻击](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-22.png)
 
 ---
 
@@ -957,7 +957,7 @@ def process(items=[]):
 
 **结构化 linting 捕获普通 linter 可能错过的坏代码模式。** 当智能体编写看起来正确但底层结构薄弱的代码时，它特别有用。
 
-![结构化 lint](./1Q6VSLSYcXTZz4gVJidygFg.png)
+![结构化 lint](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-23.png)
 
 ---
 
@@ -997,7 +997,7 @@ Pre-commit 保护你的本地 Git 历史。
 
 **当智能体可以提交代码时使用 pre-commit。当人类或智能体可以推送代码时使用 CI。一起，它们阻止坏代码悄悄成为项目的一部分。**
 
-![Pre-commit 门禁](./13OdgLIwmSKXo-QXvAlIW-A.png)
+![Pre-commit 门禁](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-24.png)
 
 ---
 
@@ -1054,7 +1054,7 @@ CI 评估门禁是智能体把工作推入真实工程流水线之后运行的�
 
 如果你能看到路径，你就能改进系统。
 
-![追踪时间线](./1YTFgPoEYaxbUJCJIz5k0xg.png)
+![追踪时间线](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-25.png)
 
 ---
 
@@ -1083,7 +1083,7 @@ JSON Lines 工作得很好，因为每个事件都变成一条清晰的记录，
 
 **先多记录。稍后裁剪。因为没有日志，每次失败都成谜。**
 
-![结构化日志](./1BUXPR2y2rudnbMU8jNJcxA.png)
+![结构化日志](https://cdn.jsdelivr.net/gh/gongzitaiyi/picture@master/uPic/2026/09/30-core-26.png)
 
 ---
 
